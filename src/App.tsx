@@ -10,21 +10,22 @@ function App() {
     setLoader(false);
   });
 
+  if (!loader) {
+    const loaderDiv: Element | null = document.querySelector(".loader");
+    loaderDiv?.remove();
+  }
+
   return (
-      <main className="about">
-        <Navbar />
-        <img
-          className="about__tree"
-          src={bigTree}
-          alt="big tree for entrance"
-        />
-        <div className="about__text">
-          <p className="about__text--title">Art, Language, Technology</p>
-          <p className="about__text--description">
-            The bridge between human and digits.
-          </p>
-        </div>
-      </main>
+    <main className="about">
+      <Navbar />
+      <img className="about__tree" src={bigTree} alt="big tree for entrance" />
+      <div className="about__text">
+        <p className="about__text--title">Art, Language, Technology</p>
+        <p className="about__text--description">
+          The bridge between human and digits.
+        </p>
+      </div>
+    </main>
   );
 }
 
