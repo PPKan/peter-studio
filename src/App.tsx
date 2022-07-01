@@ -1,45 +1,31 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import Navbar from "./components/Navbar/Navbar";
+import "./App.scss";
+import bigTree from "./images/big-tree.svg";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setLoader(false);
+  });
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+      <main className="about">
+        <Navbar />
+        <img
+          className="about__tree"
+          src={bigTree}
+          alt="big tree for entrance"
+        />
+        <div className="about__text">
+          <p className="about__text--title">Art, Language, Technology</p>
+          <p className="about__text--description">
+            The bridge between human and digits.
+          </p>
+        </div>
+      </main>
+  );
 }
 
-export default App
+export default App;
