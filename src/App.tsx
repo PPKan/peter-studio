@@ -12,14 +12,14 @@ function App() {
   loading(0);
 
   return (
-    <main className="about">
+    <main className="main">
       <Navbar />
       <Language />
-      <img className="about__tree" src={bigTree} alt="big tree for entrance" />
-      <div className="about__text">
-        <p className="about__text--title">Art, Language, Technology</p>
-        <p className="about__text--description">
-          The bridge between human and digits.
+      <img className="main__tree" src={bigTree} alt="big tree for entrance" />
+      <div className="main__text">
+        <p className="main__text--title">Art, Language, Technology</p>
+        <p className="main__text--description">
+          Construct the bridge between human and digits.
         </p>
       </div>
     </main>

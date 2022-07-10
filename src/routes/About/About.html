@@ -1,0 +1,78 @@
+<div className="about__info__greeting">
+  <p>Greetings, I'm Peter Kan</p>
+</div>
+<div className="about__info__experience">
+  <p className="about__info__experience--title">Expreiences</p>
+  <div className="about__info__experience--list">
+    <p className="about__info__experience--item">
+      Li-Ion battery pack project manager
+    </p>
+    <p className="about__info__experience--item">
+      Renewable energy project assistant
+    </p>
+    <p className="about__info__experience--item">
+      Freelance front-end developer/desinger
+    </p>
+    <p className="about__info__experience--item">
+      Mandarin/Japanese/English translater/teacher
+    </p>
+  </div>
+</div>
+<div className="about__info__skills">
+  <p className="about__info__skills--title">Skills</p>
+  <div className="about__info__skills--list">
+    <p className="about__info__skills--item">
+      Japanese - Capable of business communication
+    </p>
+    <p className="about__info__skills--item">
+      English - Capable of business communication
+    </p>
+    <p className="about__info__skills--item">
+      Web-dev - Capable of designing and building websites
+    </p>
+    <p className="about__info__skills--item">
+      Project Managing - Good at communication and scheduling
+    </p>
+  </div>
+</div>
+
+<style>
+  .about__info__greeting {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.about__info__experience {
+  grid-area: 3 / 1 / 5 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .about__info__experience--title {
+    font-size: 1.5rem;
+  }
+
+  .about__info__experience--list {
+    padding-left: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.about__info__skills {
+  grid-area: 5 / 1 / 7 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .about__info__skills--title {
+    font-size: 1.5rem;
+  }
+
+  .about__info__skills--list {
+    padding-left: 2rem;
+    line-height: 2rem;
+  }
+}
+</style>
