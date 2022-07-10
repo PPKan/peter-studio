@@ -8,7 +8,7 @@ type Props = {};
 export default function Navbar({}: Props) {
   return (
     <nav className="nav">
-      <img className="nav__icon" src={navIcon} alt="icon for navbar" />
+      <Link to="/"><img className="nav__icon" src={navIcon} alt="icon for navbar" /></Link>
       <li className="nav__list">
         <Link to="about">About</Link>
         <Link to="solutions">Solutions</Link>

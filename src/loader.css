@@ -1,15 +1,13 @@
-.loader:empty {
+#root:empty {
   position: absolute;
   top: calc(50% - 4em);
   left: calc(50% - 4em);
   width: 6em;
   height: 6em;
-  /* background-image: url(https://picsum.photos/200); */
-  background-image: url("/big-tree.svg");
 }
 
 
-/* .loader {
+.loader {
   position: absolute;
   top: calc(50% - 4em);
   left: calc(50% - 4em);
@@ -48,4 +46,4 @@
   100% {
     width: 100%;
   }
-} */
+}
